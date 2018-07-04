@@ -1,0 +1,37 @@
+/*this is a component css*/
+
+.ToDoListProps {}
+
+.Table1048577TableContainerProps {}
+
+.Table1048577Props {
+    border: lightskyblue solid 1px;
+}
+
+.Table1048577_table_rowProps {}
+
+.Table1048577_table_rowProps:hover {
+    background-color: #EEEEEE;
+}
+
+.selected {
+    background: #F5F5F5;
+}
+
+.Column1048578Props {}
+
+.mat-column-Column1048578 {}
+
+.IsDoneProps {}
+
+.Column1048579Props {}
+
+.mat-column-Column1048579 {}
+
+.DescriptionProps {}
+
+.Column1048580Props {}
+
+.mat-column-Column1048580 {}
+
+.pbDelProps {}

@@ -1,0 +1,115 @@
+<form
+  novalidate
+  [formGroup]="screenFormGroup"
+>
+  <div
+    style="display: flex; flex-direction: column"
+    magic="ToDoList"
+    class="ToDoListProps"
+  >
+    <div style="display: flex; flex-direction: row">
+      <div class="example-container mat-elevation-z8 Table1048577TableContainerProps">
+        <mat-table
+          #table
+          [dataSource]="dataSource"
+          class="Table1048577Props"
+          matSort
+          matSortDisableClear
+          (matSortChange)="tableService.sortData($event)"
+        >
+          <ng-container
+            magic="Column1048578"
+            matColumnDef="Column1048578"
+          >
+            <mat-header-cell *matHeaderCellDef> IsDone</mat-header-cell>
+            <mat-cell
+              *matCellDef="let row"
+              magicMark="magicTableRowContainer"
+            >
+              <div
+                style="display: flex; flex-direction: row"
+                *ngIf="mg.ifRowCreated(row)"
+              >
+                <mat-checkbox
+                  magic="IsDone"
+                  [rowId]="row.rowId"
+                  class="IsDoneProps"
+                  noFormControl
+                  [checked]="mg.getValue('IsDone', row.rowId)"
+                >
+                </mat-checkbox>
+              </div>
+            </mat-cell>
+          </ng-container>
+          <ng-container
+            magic="Column1048579"
+            matColumnDef="Column1048579"
+          >
+            <mat-header-cell *matHeaderCellDef> Description</mat-header-cell>
+            <mat-cell
+              *matCellDef="let row"
+              magicMark="magicTableRowContainer"
+            >
+              <div
+                style="display: flex; flex-direction: row"
+                *ngIf="mg.ifRowCreated(row)"
+              >
+                <label
+                  magic="Description"
+                  [rowId]="row.rowId"
+                  class="DescriptionProps hidden_border"
+                >
+                  {{mg.getValue('Description', row.rowId) }}
+                </label>
+              </div>
+            </mat-cell>
+          </ng-container>
+          <ng-container
+            magic="Column1048580"
+            matColumnDef="Column1048580"
+          >
+            <mat-header-cell *matHeaderCellDef></mat-header-cell>
+            <mat-cell
+              *matCellDef="let row"
+              magicMark="magicTableRowContainer"
+            >
+              <div
+                style="display: flex; flex-direction: row"
+                *ngIf="mg.ifRowCreated(row)"
+              >
+                <button
+                  mat-raised-button
+                  color="primary"
+                  magic="pbDel"
+                  [rowId]="row.rowId"
+                  class="pbDelProps"
+                >
+                  Dell
+                </button>
+              </div>
+            </mat-cell>
+          </ng-container>
+          <mat-header-row
+            *matHeaderRowDef="displayedColumns"
+            class="Table1048577_table_headerRowProps"
+          ></mat-header-row>
+          <mat-row
+            *matRowDef="let row; columns: displayedColumns;"
+            class="Table1048577_table_rowProps"
+            [ngClass]="{ 'selected': selection.isSelected(row)}"
+            magicMark="magicTableRowContainer"
+            (click)="tableService.selectRow(row.rowId)"
+          >
+          </mat-row>
+        </mat-table>
+        <mat-paginator
+          #paginator
+          [pageSize]="10"
+          [pageSizeOptions]="[5, 10, 20]"
+          (page)="tableService.mgOnPaginateChange($event)"
+        >
+        </mat-paginator>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,191 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"TodoListHadWeb",
+		"component_path":	"Test/TodoListHadWeb/",
+		"component_uniquename":	"TodoListHadWeb_TodoListHadWeb"
+	},
+	"coordinates":	{
+		"width":	725,
+		"height":	517
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"gAddToDo",
+				"common_line_id":	"line11"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	11,
+				"width":	518,
+				"height":	52
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	{
+						"alignment":	{
+							"horizontal":	1,
+							"vertical":	null
+						}
+					},
+					"props":	{
+						"id":	"vNewToDo",
+						"tab_order":	2,
+						"pattern":	"^.{0,100}$",
+						"attribute":	"A",
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	13,
+						"y":	28,
+						"width":	400,
+						"height":	20
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Button1048579",
+						"tab_order":	1,
+						"format":	"AddToDo",
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	420,
+						"y":	23,
+						"width":	78,
+						"height":	23
+					},
+					"hint":	null,
+					"controlType":	"B",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MainCanvas",
+				"tab_order":	3,
+				"common_line_id":	"line81"
+			},
+			"coordinates":	{
+				"x":	13,
+				"y":	81,
+				"width":	658,
+				"height":	335
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"gTotal",
+				"common_line_id":	"line444"
+			},
+			"coordinates":	{
+				"x":	149,
+				"y":	444,
+				"width":	349,
+				"height":	52
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label1048583",
+						"text":	"vTotalRecords",
+						"common_line_id":	"line457"
+					},
+					"coordinates":	{
+						"x":	186,
+						"y":	462,
+						"width":	73,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	{
+						"alignment":	{
+							"horizontal":	3,
+							"vertical":	null
+						}
+					},
+					"props":	{
+						"id":	"vTotalRecords",
+						"tab_order":	5,
+						"pattern":	"^\\d{0,4}$",
+						"attribute":	"N",
+						"common_line_id":	"line457"
+					},
+					"coordinates":	{
+						"x":	264,
+						"y":	462,
+						"width":	30,
+						"height":	20
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label1048585",
+						"text":	"vTotalDone",
+						"common_line_id":	"line457"
+					},
+					"coordinates":	{
+						"x":	335,
+						"y":	462,
+						"width":	58,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	{
+						"alignment":	{
+							"horizontal":	3,
+							"vertical":	null
+						}
+					},
+					"props":	{
+						"id":	"vTotalDone",
+						"tab_order":	4,
+						"pattern":	"^\\d{0,4}$",
+						"attribute":	"N",
+						"common_line_id":	"line457"
+					},
+					"coordinates":	{
+						"x":	396,
+						"y":	457,
+						"width":	30,
+						"height":	20
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		}
+	]
+}

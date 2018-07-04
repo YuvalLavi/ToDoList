@@ -1,0 +1,102 @@
+<form
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="TodoListHadWeb"
+        class="TodoListHadWebProps"
+    >
+        <div style="display: flex; flex-direction: row">
+            <mat-card
+                magic="gAddToDo"
+                class="gAddToDoProps"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <mat-form-field class="vNewToDoProps">
+                        <div>
+                            <input
+                                matInput
+                                magic="vNewToDo"
+                                formControlName="vNewToDo"
+                                pattern="^.{0,100}$"
+                            >
+                                <div *ngIf="(screenFormGroup.get('vNewToDo').dirty) && (
+screenFormGroup.get('vNewToDo').hasError('pattern')
+)">
+                                    <p>{{ mg.getErrMsg('vNewToDo') }}</p>
+                                </div>
+                        </div>
+                    </mat-form-field>
+                    <button
+                        mat-raised-button
+                        color="primary"
+                        magic="Button1048579"
+                        class="Button1048579Props"
+                    >
+                        AddToDo</button>
+                </div>
+                </mat-card>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <mat-card>
+                <magic-subform
+                    magic="MainCanvas"
+                    class="MainCanvasProps"
+                >
+                    </magic-subform>
+            </mat-card>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <mat-card
+                magic="gTotal"
+                class="gTotalProps"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        magic="Label1048583"
+                        class="Label1048583Props"
+                    >
+                        vTotalRecords</label>
+                        <mat-form-field class="vTotalRecordsProps">
+                            <div>
+                                <input
+                                    matInput
+                                    type='number'
+                                    magic="vTotalRecords"
+                                    formControlName="vTotalRecords"
+                                    pattern="^\d{0,4}$"
+                                >
+                                    <div *ngIf="(screenFormGroup.get('vTotalRecords').dirty) && (
+screenFormGroup.get('vTotalRecords').hasError('pattern')
+)">
+                                        <p>{{ mg.getErrMsg('vTotalRecords') }}</p>
+                                    </div>
+                            </div>
+                        </mat-form-field>
+                        <label
+                            magic="Label1048585"
+                            class="Label1048585Props"
+                        >
+                            vTotalDone</label>
+                            <mat-form-field class="vTotalDoneProps">
+                                <div>
+                                    <input
+                                        matInput
+                                        type='number'
+                                        magic="vTotalDone"
+                                        formControlName="vTotalDone"
+                                        pattern="^\d{0,4}$"
+                                    >
+                                        <div *ngIf="(screenFormGroup.get('vTotalDone').dirty) && (
+screenFormGroup.get('vTotalDone').hasError('pattern')
+)">
+                                            <p>{{ mg.getErrMsg('vTotalDone') }}</p>
+                                        </div>
+                                </div>
+                            </mat-form-field>
+                </div>
+                </mat-card>
+        </div>
+        </div>
+        </form>

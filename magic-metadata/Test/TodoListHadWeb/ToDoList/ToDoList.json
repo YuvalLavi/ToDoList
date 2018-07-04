@@ -1,0 +1,151 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"ToDoList",
+		"component_path":	"Test/TodoListHadWeb/ToDoList/",
+		"component_uniquename":	"TodoListHadWeb_ToDoList_ToDoList"
+	},
+	"coordinates":	{
+		"width":	504,
+		"height":	195
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table1048577",
+				"table_row_height":	28,
+				"table_title_height":	13,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	13,
+				"y":	13,
+				"width":	453,
+				"height":	161
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column1048578",
+						"column_title":	"IsDone",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	55
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"IsDone",
+								"tab_order":	1,
+								"text":	"",
+								"attribute":	"B",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line31"
+							},
+							"coordinates":	{
+								"x":	33,
+								"y":	31,
+								"width":	20,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"C",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column1048579",
+						"column_title":	"Description",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	325
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	{
+								"border":	false,
+								"alignment":	{
+									"horizontal":	1,
+									"vertical":	null
+								}
+							},
+							"props":	{
+								"id":	"Description",
+								"tab_order":	2,
+								"pattern":	"^.{0,100}$",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line31"
+							},
+							"coordinates":	{
+								"x":	73,
+								"y":	31,
+								"width":	318,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column1048580",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	50
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"pbDel",
+								"tab_order":	3,
+								"format":	"Dell",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line31"
+							},
+							"coordinates":	{
+								"x":	398,
+								"y":	31,
+								"width":	41,
+								"height":	23
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}
